@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cairo Car</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/carStyle.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cairo<span>Cairo</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+      
+         
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+  <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Admin</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>Tools</span>
+            </a>
+            <ul class="sub">
+
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="todo_list.html">Todo List</a></li>
+              <li><a href="file_upload.html">button</a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span>Manage Members</span>
+            </a>
+            <ul class="sub">
+              <li><a href="add.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="display.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-car"></i>
+              <span>Manage Cars</span>
+            </a>
+            <ul class="sub">
+              <li><a href="addCar.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCar.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span>Manage Category</span>
+            </a>
+            <ul class="sub">
+              <li><a href="AddCategory.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCategory.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="sub-menu">
+            <a href="inbox.html">
+              <i class="fa fa-envelope"></i>
+              <span>Mail </span>
+              <span class="label label-theme pull-right mail-info">2</span>
+            </a>
+          </li>
+
+
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>Charts</span>
+            </a>
+            <ul class="sub">
+              <li> <a href="morris.html"></a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="google_maps.html">
+              <i class="fa fa-map-marker"></i>
+
+              <span>Google Maps </span>
+            </a>
+          </li>
+
+          <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+<!-- **********************************************************************************************************************************************************
+        MAIN CONTENT                put here MAIN
+*********************************************************************************************************************************************************** -->
+
+  <div class="signupSection">
+    <form action="#" method="POST" class="signupForm" name="signupform">
+      <h2 class="titleCar"><b>Create New Car</b></h2>
+      <br/>
+      <ul class="noBullet">
+
+        <li>
+          <select name="category" id="category" class="inputFields" required>
+            <option value="null" selected required>Select Brand :</option>
+            <option value="BMW" required>BMW</option>
+            <option value="Mercedes" required>Mercedes</option>
+            <option value="Mini Cooper" required>Mini Cooper</option>
+            <option value="Opel" required>Opel</option>
+            <option value="KIA" required>KIA</option>
+            <option value="TOYOTA" required>TOYOTA</option>
+          </select>
+        </li>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="text" class="inputFields" id="CarSpeed" name="Car Speed" placeholder="Car Speed" value="" required>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="inputFields" id="model" name="Model" placeholder="Model" value="" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                      <div class="col-sm-6">
+                <input type="text" class="inputFields" id="mileage" name="mileage" placeholder="Mileage" value="" required>
+                      </div>
+              <div class="col-sm-6">
+                <input type="text" class="inputFields" id="model" name="minmumAge" placeholder="Minmum Age" value="" required />
+              </div>
+            </div>
+          </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+                <select name="Seats" id="Seats" class="inputFields" required>
+                      <option value="null" selected required>Select Numbers of Seats :</option>
+                      <option value="1" required>1</option>
+                      <option value="2" required>2</option>
+                      <option value="3" required>3</option>
+                      <option value="4" required>4</option>
+                      <option value="5" required>5</option>
+                      <option value="6" required>6</option>
+                      <option value="7" required>7</option>
+                      <option value="8" required>8</option>
+                      <option value="9" required>9</option>
+                      <option value="10" required>10</option>
+                      <option value="11" required>11</option>
+                      <option value="12" required>12</option>
+                      <option value="13" required>13</option>
+                      <option value="14" required>14</option>
+                    </select>
+                  </div>
+
+            <div class="col-sm-6">
+                <select name="Doors" id="Doors" class="inputFields" required>
+                    <option value="null" selected required>Select Numbers of Doors :</option>
+                    <option value="1" required>1</option>
+                    <option value="2" required>2</option>
+                    <option value="3" required>3</option>
+                    <option value="4" required>4</option>
+                    <option value="5" required>5</option>
+                    <option value="6" required>6</option>
+                    <option value="7" required>7</option>
+                    <option value="8" required>8</option>
+                    <option value="9" required>9</option>
+                    <option value="10" required>10</option>
+                  </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+
+                    <label class="inputFields">
+                        <label class="lblRadio" for="tansmission">Tansmission :</label>
+                        <input class="form-check-input" type="radio" name="tansmission" id="manual" required>
+                        <label class="form-check-label" for="manual">
+                            Manual
+                        </label>
+        
+                        <input class="form-check-input" type="radio" name="tansmission" id="automatic" required>
+                        <label class="form-check-label" for="automatic">
+                            Automatic
+                        </label>
+                      </label>
+              </div>
+              
+              <div class="col-sm-6">
+                <label class="inputFields">
+                  <label class="lblRadio" for="airBags">Air bags :</label>
+                  <input class="form-check-input" type="radio" value="yes" name="airBags" id="airBagsYes" required>
+                  <label class="form-check-label" for="airBagsYes">
+                    Yes
+                  </label>
+  
+                  <input class="form-check-input" value="no" type="radio" name="airBags" id="airBagsNo" required>
+                  <label class="form-check-label" for="airBagsNo">
+                    No
+                  </label>
+                </label>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                    <label class="inputFields">
+                        <label class="lblRadio" for="gps">GPS :</label>
+                        <input class="form-check-input" type="radio" name="gps" id="available" required>
+                        <label class="form-check-label" for="available">
+                            Available
+                        </label>
+        
+                        <input class="form-check-input" type="radio" name="gps" id="unavailable" required>
+                        <label class="form-check-label" for="unavailable">
+                            Unavailable
+                        </label>
+                      </label>
+                </div>
+
+
+                <div class="col-sm-6">
+                    <label class="inputFields">
+                        <label class="lblRadio" for="luggage">Luggage :</label>
+                        <input class="form-check-input" type="radio" value="yes" name="luggage" id="luggageYes" required>
+                        <label class="form-check-label" for="luggageYes">
+                            Yes
+                        </label>
+        
+                        <input class="form-check-input" type="radio" value="no" name="luggage" id="luggageNo" required>
+                        <label class="form-check-label" for="luggageNo">
+                            No
+                        </label>
+                      </label>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                        <label class="inputFields">
+                            <label class="lblRadio" for="fuel">Fuel :</label>
+                            <input class="form-check-input" type="radio" value="yes" name="fuel" id="fuelYes" required>
+                            <label class="form-check-label" for="fuelYes">
+                                Yes
+                            </label>
+            
+                            <input class="form-check-input" type="radio" value="no" name="fuel" id="fuelNo" required>
+                            <label class="form-check-label" for="fuelNo">
+                                No
+                            </label>
+                          </label>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <label class="inputFields">
+                              <input class="form-check-input" type="file" name="file" id="carImage" required>
+                            </label>
+                            </div>
+                        </div>
+                      </div>
+
+
+        <li id="center-btn">
+          <input type="submit" id="join-btn" name="Add" alt="Add" value="Add">
+          <input type="reset" id="join-btn" name="Reset" alt="Reset" value="Reset">
+        </li>
+
+      </ul>
+    </form>
+  </div>
+
+</section>
+<!-- /wrapper -->
+</section>
+<!-- /MAIN CONTENT -->
+<!--main content end-->
+<!--footer start-->
+<footer class="site-footer">
+<div class="text-center">
+  <p>
+                 
+          &copy; Copyrights <script>document.write(new Date().getFullYear());</script><strong> <a href="../Cairo Car Project/Our Team.html" target="_blank">Our Team</a><br></strong> All Rights Reserved.
+        </p>
+       
+
+  <a href="blank.html#" class="go-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+</div>
+</footer>
+<!--footer end-->
+</section>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="lib/jquery.ui.touch-punch.min.js"></script>
+<script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+<script src="lib/jquery.scrollTo.min.js"></script>
+<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+<!--common script for all pages-->
+<script src="lib/common-scripts.js"></script>
+<script src="js/filterData.js"></script>
+
+<script>
+$('.icon').click(function () {
+$('span').toggleClass("cancel");
+});
+</script>
+<!--script for this page-->
+
+</body>
+
+</html>

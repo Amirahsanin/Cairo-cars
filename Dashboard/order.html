@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cairo Car</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/memberStyle.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/displayStyle.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/filterData.js"></script>
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+   <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cairo<span>Cairo</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+      
+         
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Admin</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+
+
+
+
+ <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span>Manage Members</span>
+            </a>
+            <ul class="sub">
+              <li><a href="add.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="display.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-car"></i>
+              <span>Manage Cars</span>
+            </a>
+            <ul class="sub">
+              <li><a href="addCar.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCar.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span>Manage Category</span>
+            </a>
+            <ul class="sub">
+              <li><a href="AddCategory.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCategory.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+
+
+ <li class="sub-menu">
+            <a href="order.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Order </span>
+            </a>
+          </li>
+		  
+
+ <li class="sub-menu">
+            <a href="inbox.html">
+              <i class="fa fa-envelope"></i>
+              <span>Mail </span>
+              <span class="label label-theme pull-right mail-info">2</span>
+            </a>
+          </li>
+
+
+
+
+
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>Tools</span>
+            </a>
+            <ul class="sub">
+
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="todo_list.html">Todo List</a></li>
+              <li><a href="file_upload.html">button</a></li>
+            </ul>
+          </li>
+
+
+         
+
+
+         
+
+
+          <li class="sub-menu">
+          <a href="morris.html">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>Charts</span>
+            </a>
+           
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="google_maps.html">
+              <i class="fa fa-map-marker"></i>
+
+              <span>Google Maps </span>
+            </a>
+          </li>
+
+          <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+<!-- **********************************************************************************************************************************************************
+        MAIN CONTENT                put here MAIN
+*********************************************************************************************************************************************************** -->
+
+    <div class="content">
+        <h2 class="titlePage">Order Report</h2>
+        <br>
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-addon">
+                <i class=" input-group-text fa fa-search"></i>
+            </div>
+            <input id="myInput" type="text" placeholder="Search.." class="form-control">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Customer Id</th>
+                    <th>Type</th>
+                    <th>Car Model</th>
+                    <th>order  Price</th>
+                    <th>Status</th>
+                    <th>Order Date</th>
+                  
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>1</td>
+                    <td>120 </td>
+                    <td>Sell</td>
+                    <td>Opel</td>
+                    <td>500000</td>
+                    <td>Completed</td>
+                    <td>1/7/2021</td>
+                  
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>110 </td>
+                    <td>rent</td>
+                    <td>Opel</td>
+                    <td>500</td>
+                    <td>UnCompleted</td>
+                    <td>1/7/2021</td>
+                 
+                </tr>
+                <tr>
+                    <td>3 </td>
+                    <td>180 </td>
+                    <td>sell</td>
+                    <td>Opel</td>
+                    <td>200000</td>
+                    <td>Completed</td>
+                    <td>1/7/2021</td>
+                  
+                   
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>160</td>
+                    <td>rent</td>
+                    <td>Opel</td>
+                    <td>420</td>
+                    <td>Completed</td>
+                    <td>1/7/2021</td>
+                   
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>200 </td>
+                    <td>rent</td>
+                    <td>Opel</td>
+                    <td>400</td>
+                    <td>UnCompleted</td>
+                    <td>1/7/2021</td>
+                   
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>120 </td>
+                    <td>sell</td>
+                    <td>Opel</td>
+                    <td>400000</td>
+                    <td>Completed</td>
+                    <td>1/7/2021</td>
+                   
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>220 </td>
+                    <td>sell</td>
+                    <td>Opel</td>
+                    <td>200000</td>
+                    <td>UnCompleted</td>
+                    <td>1/7/2021</td>
+                   
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<!-- /wrapper -->
+</section>
+<!-- /MAIN CONTENT -->
+<!--main content end-->
+<!--footer start-->
+<footer class="site-footer">
+<div class="text-center">
+  <p>
+                 
+          &copy; Copyrights <script>document.write(new Date().getFullYear());</script><strong> <a href="../Cairo Car Project/Our Team.html" target="_blank">Our Team</a><br></strong> All Rights Reserved.
+        </p>
+       
+  <a href="blank.html#" class="go-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+</div>
+</footer>
+<!--footer end-->
+</section>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="lib/jquery.ui.touch-punch.min.js"></script>
+<script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+<script src="lib/jquery.scrollTo.min.js"></script>
+<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+<!--common script for all pages-->
+<script src="lib/common-scripts.js"></script>
+<script src="js/filterData.js"></script>
+
+<script>
+$('.icon').click(function () {
+$('span').toggleClass("cancel");
+});
+</script>
+<!--script for this page-->
+
+</body>
+
+</html>

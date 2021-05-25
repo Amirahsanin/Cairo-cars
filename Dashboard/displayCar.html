@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cairo Car</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/memberStyle.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/displayStyle.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/filterData.js"></script>
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+   <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cairo<span>Cairo</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+      
+         
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Admin</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+
+
+
+
+ <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span>Manage Members</span>
+            </a>
+            <ul class="sub">
+              <li><a href="add.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="display.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-car"></i>
+              <span>Manage Cars</span>
+            </a>
+            <ul class="sub">
+              <li><a href="addCar.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCar.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span>Manage Category</span>
+            </a>
+            <ul class="sub">
+              <li><a href="AddCategory.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCategory.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+
+
+ <li class="sub-menu">
+            <a href="order.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Order </span>
+            </a>
+          </li>
+		  
+
+ <li class="sub-menu">
+            <a href="inbox.html">
+              <i class="fa fa-envelope"></i>
+              <span>Mail </span>
+              <span class="label label-theme pull-right mail-info">2</span>
+            </a>
+          </li>
+
+
+
+
+
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>Tools</span>
+            </a>
+            <ul class="sub">
+
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="todo_list.html">Todo List</a></li>
+              <li><a href="file_upload.html">button</a></li>
+            </ul>
+          </li>
+
+
+         
+
+
+         
+
+
+          <li class="sub-menu">
+          <a href="morris.html">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>Charts</span>
+            </a>
+           
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="google_maps.html">
+              <i class="fa fa-map-marker"></i>
+
+              <span>Google Maps </span>
+            </a>
+          </li>
+
+          <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+<!-- **********************************************************************************************************************************************************
+        MAIN CONTENT                put here MAIN
+*********************************************************************************************************************************************************** -->
+
+    <div class="content">
+        <h2 class="titlePage">Cars Data</h2>
+        <br>
+        <br>
+
+        <div class="input-group">
+            <div class="input-group-addon">
+                <i class=" input-group-text fa fa-search"></i>
+            </div>
+            <input id="myInput" type="text" placeholder="Search.." class="form-control">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Speed</th>
+                    <th>Transmition</th>
+                    <th>Seats</th>
+                    <th>Doors</th>
+                    <th>Luggage</th>
+                    <th>Air bags</th>
+                    <th>Fuel</th>
+                    <th>GPS</th>
+                    <th>Mileage</th>
+                    <th>Minimum Age</th>
+                    <th>Car Photo</th>
+                    <th>Remove \ Edit Car</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>BMW</td>
+                    <td>120 KM/H</td>
+                    <td>Automatic</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>40/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Ym13fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                        /> </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mercedies</td>
+                    <td>110 KM/H</td>
+                    <td>Automatic</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>23/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/281/548/978/mercedes-benz-amg-gt-car-wallpaper-preview.jpg"
+                        /> </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mini cooper</td>
+                    <td>180 KM/H</td>
+                    <td>Automatic</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>25/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/95/217/127/mini-mini-cooper-s-r56-mini-challenge-race-cars-wallpaper-preview.jpg"
+                        /> 
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Opel</td>
+                    <td>160 KM/H</td>
+                    <td>manual</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>30/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/514/406/514/opel-insignia-car-wallpaper-preview.jpg"
+                        />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>KIA</td>
+                    <td>200 KM/H</td>
+                    <td>Automatic</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>10/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/961/664/47/kia-cee-d-kia-car-vehicle-wallpaper-preview.jpg"
+                        /> </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TOYOTA</td>
+                    <td>120 KM/H</td>
+                    <td>manual</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>30/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/339/279/701/toyota-gt-86-jdm-japanese-cars-toyota-wallpaper-preview.jpg"
+                        /> </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BMW</td>
+                    <td>220 KM/H</td>
+                    <td>Automatic</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>20/s</td>
+                    <td>18</td>
+                    <td>
+                        <img width="70px" src="https://c4.wallpaperflare.com/wallpaper/735/651/580/bmw-red-car-car-bmw-m4-wallpaper-preview.jpg"
+                        /> </td>
+                    <td>
+                        <button type="button" class="btn btn-danger btnRemove">
+                            <i class="fa fa-remove"></i> Delete</button>
+                        <button type="button" class="btn btn-info btnEdit">
+                            <i class="fa fa-edit"></i> Edit</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<!-- /wrapper -->
+</section>
+<!-- /MAIN CONTENT -->
+<!--main content end-->
+<!--footer start-->
+<footer class="site-footer">
+<div class="text-center">
+  <p>
+                 
+          &copy; Copyrights <script>document.write(new Date().getFullYear());</script><strong> <a href="../Cairo Car Project/Our Team.html" target="_blank">Our Team</a><br></strong> All Rights Reserved.
+        </p>
+       
+  <a href="blank.html#" class="go-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
+</div>
+</footer>
+<!--footer end-->
+</section>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="lib/jquery.ui.touch-punch.min.js"></script>
+<script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+<script src="lib/jquery.scrollTo.min.js"></script>
+<script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+<!--common script for all pages-->
+<script src="lib/common-scripts.js"></script>
+<script src="js/filterData.js"></script>
+
+<script>
+$('.icon').click(function () {
+$('span').toggleClass("cancel");
+});
+</script>
+<!--script for this page-->
+
+</body>
+
+</html>

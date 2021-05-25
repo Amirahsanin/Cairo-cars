@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cairo Car</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/categoryStyle.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS-->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cairo<span>Cairo</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+      
+         
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Admin</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+
+
+
+
+ <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span>Manage Members</span>
+            </a>
+            <ul class="sub">
+              <li><a href="add.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="display.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-car"></i>
+              <span>Manage Cars</span>
+            </a>
+            <ul class="sub">
+              <li><a href="addCar.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCar.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span>Manage Category</span>
+            </a>
+            <ul class="sub">
+              <li><a href="AddCategory.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCategory.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+
+
+ <li class="sub-menu">
+            <a href="order.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Order </span>
+            </a>
+          </li>
+		  
+
+ <li class="sub-menu">
+            <a href="inbox.html">
+              <i class="fa fa-envelope"></i>
+              <span>Mail </span>
+              <span class="label label-theme pull-right mail-info">2</span>
+            </a>
+          </li>
+
+
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>Tools</span>
+            </a>
+            <ul class="sub">
+
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="todo_list.html">Todo List</a></li>
+              <li><a href="file_upload.html">button</a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+          <a href="morris.html">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>Charts</span>
+            </a>
+           
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="google_maps.html">
+              <i class="fa fa-map-marker"></i>
+
+              <span>Google Maps </span>
+            </a>
+          </li>
+          <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **************************************************-->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+     
+
+                <div class="signupSection">
+                  <form action="#" method="POST" class="signupForm" name="signupform">
+                    <h2 class="titleCar"><b>Create new category</b></h2>
+                    <br />
+                    <ul class="noBullet">
+
+                      <li>
+                        <select name="category" id="category" class="inputFields" required>
+                          <option selected value="null"> select </option>
+                          <option value="Rent">Rent</option>
+                          <option value="Purchase">Purchase</option>
+                        </select>
+                      </li>
+
+                      <li>
+                        <input type="text" class="inputFields" id="categoryName" name="categoryName"
+                          placeholder="Category name" value="" required />
+                      </li>
+
+
+                      <li id="center-btn">
+                        <input type="submit" id="join-btn" name="Add" alt="Add" value="Add">
+                        <input type="reset" id="join-btn" name="Reset" alt="Reset" value="Reset">
+                      </li>
+              
+                    </ul>
+                  </form>
+                </div>
+
+
+                <!-- 
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label class="col-lg-4 control-label">Category name:</label>
+                    <div class="col-lg-8">
+                      <input class="form-control" Required type="text" value="" >
+                    </div>
+                  </div>
+
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label"> Category parents:</label>
+                      <div class="col-lg-8">
+                        <select class="form-control" aria-label="Default select example">
+                          <option selected> select </option>
+                          <option value="1">Rent</option>
+                          <option value="2">Purchase</option>
+                        </select>
+
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label"></label>
+                      <div class="col-md-8">
+                        <input type="submit" class="btn btn-primary" value="Add">
+                        
+                        <input type="reset" class="btn btn-default" value="reset">
+                      </div>
+                    </div>
+                  </form> -->
+             
+      </section>
+    </section>
+
+
+
+
+    <!--main content end-->
+
+
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+	<div class="text-center">
+     <p>
+                 
+          &copy; Copyrights <script>document.write(new Date().getFullYear());</script><strong> <a href="../Cairo Car Project/Our Team.html" target="_blank">Our Team</a><br></strong> All Rights Reserved.
+        </p>
+       
+        <a href="Add.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="lib/tasks.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Cairo Car</title>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/memberStyle.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/displayStyle.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/filterData.js"></script>
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>Cairo<span>Cairo</span></b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+      
+         
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+       <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Admin</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+
+
+
+
+
+ <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-users"></i>
+              <span>Manage Members</span>
+            </a>
+            <ul class="sub">
+              <li><a href="add.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="display.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-car"></i>
+              <span>Manage Cars</span>
+            </a>
+            <ul class="sub">
+              <li><a href="addCar.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCar.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-list-alt"></i>
+              <span>Manage Category</span>
+            </a>
+            <ul class="sub">
+              <li><a href="AddCategory.html"> <i class="fa fa-plus"></i> Add </a></li>
+              <li><a href="displayCategory.html"><i class="fa fa-minus"></i> Edit\Remove </a></li>
+            </ul>
+          </li>
+
+
+
+
+ <li class="sub-menu">
+            <a href="order.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span>Order </span>
+            </a>
+          </li>
+		  
+
+ <li class="sub-menu">
+            <a href="inbox.html">
+              <i class="fa fa-envelope"></i>
+              <span>Mail </span>
+              <span class="label label-theme pull-right mail-info">2</span>
+            </a>
+          </li>
+
+
+
+
+
+
+
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>Tools</span>
+            </a>
+            <ul class="sub">
+
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="todo_list.html">Todo List</a></li>
+              <li><a href="file_upload.html">button</a></li>
+            </ul>
+          </li>
+
+
+         
+
+
+         
+
+
+          <li class="sub-menu">
+          <a href="morris.html">
+              <i class=" fa fa-bar-chart-o"></i>
+              <span>Charts</span>
+            </a>
+           
+          </li>
+
+
+          <li class="sub-menu">
+            <a href="google_maps.html">
+              <i class="fa fa-map-marker"></i>
+
+              <span>Google Maps </span>
+            </a>
+          </li>
+
+          <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+<!-- **********************************************************************************************************************************************************
+        MAIN CONTENT                put here MAIN
+*********************************************************************************************************************************************************** -->
+<div class="content">
+    <h2 class="titlePage">Members Data</h2>
+    <br><br>
+
+    <div class="input-group">
+        <div class="input-group-addon"><i class=" input-group-text fa fa-search"></i></div>
+        <input id="myInput" type="text" placeholder="Search.." class="form-control">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Date Birth</th>
+                <th>Password</th>
+                <th>National Number</th>
+                <th>Gender</th>
+                <th>Remove \ Edit Member</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr>
+                <td>Mahmoud</td>
+                <td>Mohamed</td>
+                <td>Mahmoud1023</td>
+                <td>hamed@gmail.com</td>
+                <td>01-01-1993</td>
+                <td>Ha@122121211</td>
+                <td>19283092180821</td>
+                <td>Male</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Omnia</td>
+                <td>Ehab</td>
+                <td>Omnia344</td>
+                <td>Omnia23354@gmail.com</td>
+                <td>05-06-1995</td>
+                <td>Om@1232211</td>
+                <td>19932242180821</td>
+                <td>Female</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mohamed</td>
+                <td>Amir</td>
+                <td>Amir2123</td>
+                <td>Amir_1212@gmail.com</td>
+                <td>01-10-1992</td>
+                <td>Am@090922</td>
+                <td>29283222180821</td>
+                <td>Male</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Yosra</td>
+                <td>Alfeky</td>
+                <td>Yo329323</td>
+                <td>Yo_Al32893@gmail.com</td>
+                <td>01-01-1993</td>
+                <td>Yo@34780942</td>
+                <td>19283093090821</td>
+                <td>Female</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Mohamed</td>
+                <td>Atef</td>
+                <td>Mohamed329323</td>
+                <td>Atef232893@gmail.com</td>
+                <td>01-01-1991</td>
+                <td>Atef@34780942</td>
+                <td>29283099321221</td>
+                <td>Male</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Omar</td>
+                <td>Donia</td>
+                <td>Om329323</td>
+                <td>Omar32893@gmail.com</td>
+                <td>01-01-1993</td>
+                <td>Om@342397942</td>
+                <td>19293213090821</td>
+                <td>Male</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Ahmed</td>
+                <td>Shawky</td>
+                <td>Ahmed3293</td>
+                <td>Shawky32893@gmail.com</td>
+                <td>01-01-1997</td>
+                <td>Shawky@9380492</td>
+                <td>29323093090099</td>
+                <td>Male</th>
+                <td>
+                    <button type="button" class="btn btn-danger btnRemove">
+                        <i class="fa fa-remove"></i> Delete</button>
+                    <button type="button" class="btn btn-info btnEdit">
+                        <i class="fa fa-edit"></i> Edit</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+ 
+
+
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+       <p>
+                 
+          &copy; Copyrights <script>document.write(new Date().getFullYear());</script><strong> <a href="../Cairo Car Project/Our Team.html" target="_blank">Our Team</a><br></strong> All Rights Reserved.
+        </p>
+       
+        <a href="blank.html#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="lib/jquery.ui.touch-punch.min.js"></script>
+  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="lib/jquery.scrollTo.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <script src="js/filterData.js"></script>
+
+  <script>
+    $('.icon').click(function () {
+      $('span').toggleClass("cancel");
+    });
+  </script>
+  <!--script for this page-->
+
+</body>
+
+</html>
